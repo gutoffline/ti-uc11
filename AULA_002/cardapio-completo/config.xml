@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="org.gutoxavier.cardapio"
+        version="1.0.1">
+    <name>
+        Cardápio OnLine
+    </name>
+
+    <description>
+        Aplicativo para pedidos em restaurantes
+    </description>
+
+    <author href="https://gutoxavier.com.br" email="gutoffline@gmail.com">
+        Guto Xavier
+    </author>
+    <icon src="images/logotipo.png" />
+</widget>
