@@ -1,3 +1,53 @@
-body{
-    background: blue;
+.cabecalho, 
+.rodape{
+    text-align: center;
+    border: 1px solid green;
 }
+
+.titulo{
+    font-size: 30px;
+    color: red;
+    font-family: 'Trebuchet MS';
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+.logo-cabecalho{
+    width: 200px;
+}
+
+.itens-menu{
+    color: tomato;
+    font-family: arial;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.tabela{
+    border: 1px solid;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.cabecalho-colunas{
+    background: tomato;
+    color: white;
+    text-transform: uppercase;
+    font-family: arial;
+}
+
+tbody td{
+    border: 1px solid;
+    padding: 5px;
+}
+
+tbody img{
+    width: 100px;
+}
+
+.rodape img{
+    width: 80px;
+}
+

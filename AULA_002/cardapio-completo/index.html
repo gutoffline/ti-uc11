@@ -5,9 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio Online</title>
     <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="images/logotipo.png" rel="shortcut icon">
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <h1 class="titulo">Restaurante</h1>
+        <img src="images/logotipo.png" alt="logo-cabecalho">
+
+        <nav>
+            <a href="index.html" class="itens-menu">Pratos</a> -
+            <a href="pedidos.html" class="itens-menu">Pedidos</a> -
+            <a href="mailto:restaurante@gmail.com" class="itens-menu">Fale conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th class="cabecalho-colunas">Foto</th>
+                    <th class="cabecalho-colunas">Prato</th>
+                    <th class="cabecalho-colunas">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/prato1.jpg"></td>
+                    <td>Hamburguer</td>
+                    <td>R$ 12,90</td>
+                </tr>
+                <tr>
+                    <td><img src="images/prato2.jpg"></td>
+                    <td>Pizza</td>
+                    <td>R$ 29,90</td>
+                </tr>
+                <tr>
+                    <td><img src="images/prato3.jpg"></td>
+                    <td>Temaki</td>
+                    <td>R$ 10,90</td>
+                </tr>
+                <tr>
+                    <td><img src="images/prato4.jpg"></td>
+                    <td>Sorvete</td>
+                    <td>R$ 6,90</td>
+                </tr>
+                <tr>
+                    <td><img src="images/prato5.jpg"></td>
+                    <td>Bolo de Cenoura</td>
+                    <td>R$ 5,90</td>
+                </tr>
+                <tr>
+                    <td><img src="images/prato6.jpg"></td>
+                    <td>Torta</td>
+                    <td>R$ 9,90</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="rodape">
+        restaurante@gmail.com - (19) 12345-1234<br>
+        <img src="images/logotipo.png">
+    </footer>
 
     <script src="js/funcoes.js"></script>
 </body>

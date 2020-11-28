@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Online</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="images/logotipo.png" rel="shortcut icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">Restaurante</h1>
+        <img src="images/logotipo.png" alt="logo-cabecalho">
+
+        <nav>
+            <a href="index.html" class="itens-menu">Pratos</a> -
+            <a href="pedidos.html" class="itens-menu">Pedidos</a> -
+            <a href="mailto:restaurante@gmail.com" class="itens-menu">Fale conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <label for="nome">Nome:</label>
+            <input id="nome" required placeholder="Nome e sobrenome"> <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required placeholder="email@dominio.com.br"> <br>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" min="15" max="100"> <br>
+            <label for="cidade">Cidade</label>
+            <select id="cidade">
+                <option value="AME">Americana</option>
+                <option value="SBO">Santa Bárbara</option>
+                <option value="PIR">Piracicaba</option>
+            </select>
+            <br>
+            Qual o prato?
+            <input type="checkbox" value="S">Salgado
+            <input type="checkbox" value="D">Doce
+            <br>
+            <input type="radio" name="entrega">Vou retirar
+            <input type="radio" name="entrega">Quero delivery
+            <br>
+            Endereço:
+            <br>
+            <textarea id="endereco"></textarea>
+            <br>
+            <button type="submit">Realizar Pedido</button>
+        </form>
+            
+    </main>
+    <footer class="rodape">
+        restaurante@gmail.com - (19) 12345-1234<br>
+        <img src="images/logotipo.png">
+    </footer>
+
+    <script src="js/funcoes.js"></script>
+</body>
+</html>
