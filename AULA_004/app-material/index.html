@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Material</title>
+    <link href="icons/material-icons.css" rel="stylesheet">
+    <link href="materialize/css/materialize.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="images/logo.png" rel="shortcut icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" class="brand-logo meu-logo">
+
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">E-mail</a></li>
+            </ul>
+        </nav>
+
+        <ul class="sidenav" id="mobile-menu">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="images/fundo.jpg">
+                    </div>
+                    <a href="#user"><img class="circle" src="images/pessoa.jpg"></a>
+                    <a href="#name"><span class="white-text name">Tony Stark</span></a>
+                    <a href="#email"><span class="white-text email">tonystark@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="index.html"><i class="material-icons left inline-icon">home</i>Home</a></li>
+            <li><a href="contato.html"><i class="material-icons left inline-icon">phone</i>Contato</a></li>
+            <li><a href="https://facebook.com"><i class="material-icons left inline-icon">face</i>Facebook</a></li>
+            <li><a href="https://youtube.com"><i class="material-icons left inline-icon">ondemand_video</i>YouTube</a></li>
+            <li><a href="mailto:tonystark@gmail.com"><i class="material-icons left inline-icon">email</i>E-mail</a></li>
+        </ul>
+    </header>
+    
+    <div id="banner" class="center-align">
+        <div class="carousel carousel-slider">
+            <a href="#" class="carousel-item">
+                <img src="images/foto1.jpg" class="responsive-img">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="images/foto2.jpg" class="responsive-img">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="images/foto3.jpg" class="responsive-img">
+            </a>
+        </div>
+    </div>
+
+    <main class="container">
+        <div id="produtos">
+            <h1 class="red-text text-darken-4 blue lighten-3">Nossos Produtos</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, iusto. Et odio nemo necessitatibus quasi harum! Laborum vero cupiditate, laudantium id quia amet porro veritatis voluptate cumque. Expedita, deserunt aliquam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit dignissimos mollitia deleniti, unde molestiae perferendis laborum et hic error sint quae, labore eum, cupiditate repellendus voluptatum sit quo velit!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellendus perferendis doloribus esse veniam molestiae non cupiditate libero iure quod assumenda enim exercitationem voluptatibus? Aliquid molestiae suscipit magni atque quae?
+            </p>
+        </div>
+        <div id="servicos">
+            <h1>Nossos serviços</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque corporis minus quas ipsum voluptatem sequi. Quae sed sapiente porro provident minima repellendus soluta sunt modi corrupti. Vel, dicta enim.
+            </p>
+        </div>
+        <div id="contato">
+            <h1>Contato</h1>
+            <form name="contato_site" method="post">
+                <input type="text" required id="nome">
+                <label for="nome">Nome Completo</label>
+
+                <input type="email" required id="email">
+                <label for="email">E-mail</label>
+
+                <textarea id="mensagem"></textarea>
+                <label for="mensagem">Mensagem</label>
+                <br>
+                <button type="submit" class="waves-effect waves-light btn btn-large"><i class="material-icons left">directions_run</i>Enviar</button>
+            </form>
+            <br>
+            <div class="center-align">
+                <a class="waves-effect waves-light btn-large modal-trigger" href="#mais-informacoes">Mais Informações</a>
+            </div>
+
+            <div class="modal" id="mais-informacoes">
+                <div class="modal-content">
+                    <h4>Bem Vindo</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quae neque, suscipit consequuntur alias tempora ipsa? Neque recusandae cum, commodi odio animi labore doloribus, aperiam vel nemo veniam praesentium pariatur.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="red lighten-1">
+        <div class="row">
+            <p class="col s8">
+                <a href="#"><img src="images/facebook.png"></a>
+                <a href="#"><img src="images/youtube.png"></a>
+                <a href="#"><img src="images/email.png"></a>
+            </p>
+            <p class="col s4 right-align">
+                <img src="images/logo.png" class="meu-logo circle">
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="js/funcoes.js"></script>
+</body>
+</html>
