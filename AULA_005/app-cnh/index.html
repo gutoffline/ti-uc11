@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Template</title>
+    <link href="icons/material-icons.css" rel="stylesheet">
+    <link href="materialize/css/materialize.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="images/logo.png" rel="shortcut icon">
+</head>
+<body onload="CarregarEspera();">
+    
+    <div class="container">
+        <h2>CNH</h2>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" id="nome">
+                    <label for="Nome">Nome</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="text" id="idade">
+                    <label for="idade">idade</label>
+                </div>
+                
+                <div class="input-field col s12">
+                    <label for="Telefone">Telefone</label>
+                    <input type="text" id="telefone">
+                </div>
+
+            </div>
+        </form>
+        <ul id="lista-espera"></ul>
+
+        <div class="row">
+            <button type="button" class="btn-large btn-block waves-effect waves-light botao-linha" id="salvar-tarefas" onclick="Salvar();">Salvar</button>
+            <button type="button" class="btn-large btn-block waves-effect waves-light botao-linha" id="excluir-tarefas" onclick="ExcluirTodas();">Excluir lista de espera</button>
+        </div>
+
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="js/funcoes.js"></script>
+</body>
+</html>

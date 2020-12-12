@@ -16,13 +16,25 @@ function AdicionarTarefa(){
 
 function SalvarTarefas(){
     localStorage.listaDeTarefas = $("#lista-de-tarefas").html();
-    alert("Tarefas foram salvas");
+    $("#modal-salvar").modal("open");
 }
 
 function CarregarTarefas(){
     $("#lista-de-tarefas").html(localStorage.listaDeTarefas);
 }
 
+function ExcluirTodasTarefas(){
+    let confirmacao = confirm("Continuar com a exclusão?");
+    if(confirmacao == true){
+        $("#lista-de-tarefas").html("");
+        localStorage.clear();
+        alert("tudo apagado");
+    }else{
+        alert("exclusão cancelada");
+    }
+}
+
 
 
 $("#modal-erro-formulario").modal();
+$("#modal-salvar").modal();
