@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Template</title>
+    <link href="icons/material-icons.css" rel="stylesheet">
+    <link href="materialize/css/materialize.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="images/logo.png" rel="shortcut icon">
+</head>
+<body class="teal lighten-5">
+    <ul class="tabs">
+        <li class="tab"><a href="#tela1">COTAÇÃO</a></li>
+        <li class="tab"><a href="#tela2">CONVERSÃO</a></li>
+    </ul>
+
+    <div class="container" id="tela1">
+        <h3>Cotação do Dólar / Euro</h3>
+        <select id="moeda" class="browser-default">
+            <option>Escolha a moeda</option>
+            <option value="USD">Dólar</option>
+            <option value="EUR">EURO</option>
+        </select>
+        <input type="text" id="cotacao" placeholder="Cotação" readonly>
+        <button type="button" onclick="Cotacao();" class="btn">Cotação</button>
+    </div>
+
+    <div class="container" id="tela2">
+        <h3>Conversão</h3>
+        <select id="moeda-converter" class="browser-default">
+            <option>Escolha a moeda</option>
+            <option value="USD">Dólar</option>
+            <option value="EUR">EURO</option>
+        </select>
+        <input type="number" id="valor-reais" placeholder="Informe quanto você possui em R$">
+        <input type="text" id="valor-convertido" placeholder="Valor convertido" readonly>
+        <button type="button" onclick="Converter();" class="btn">CONVERTER</button>
+    </div>
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="js/funcoes.js"></script>
+</body>
+</html>

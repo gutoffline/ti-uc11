@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="org.gutoxavier.appcotacao"
+        version="1.0.0">
+    <name>
+        App Cotação
+    </name>
+
+    <description>
+       Verificar a cotação do Dólar e do Euro e converter um valor em reais.
+    </description>
+
+    <author href="http://gutoxavier.com.br" email="gutoffline@gmail.com">
+        Guto Xavier
+    </author>
+    <icon src="images/logo.png" />
+
+    <access origin="*"/>
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>
